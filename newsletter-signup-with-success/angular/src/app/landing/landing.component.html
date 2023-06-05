@@ -1,0 +1,46 @@
+<!-- import "./Landing.css";
+import SignupForm from "./SignupForm";
+import SignUpDesktop from "../assets/images/illustration-sign-up-desktop.svg";
+import SignUpMobile from "../assets/images/illustration-sign-up-mobile.svg";
+import IconList from "../assets/images/icon-list.svg"; -->
+
+<section class="content-wrapper">
+  <div class="image">
+    <picture>
+      <source
+        media="(min-width: 950px)"
+        srcset="assets/images/illustration-sign-up-desktop.svg"
+      />
+      <source
+        media="(min-width: 375px)"
+        srcset="assets/images/illustration-sign-up-mobile.svg"
+      />
+      <img srcset="assets/images/illustration-sign-up-mobile.svg" alt="" />
+    </picture>
+  </div>
+  <div class="signup-form">
+    <h2>Stay updated!</h2>
+    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    <ul>
+      <li>
+        <div class="product-list">
+          <img src="assets/images/icon-list.svg" />
+          <p>Product discovery and building what matters</p>
+        </div>
+      </li>
+      <li>
+        <div class="product-list">
+          <img src="assets/images/icon-list.svg" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+      </li>
+      <li>
+        <div class="product-list">
+          <img src="assets/images/icon-list.svg" />
+          <p>And much more!</p>
+        </div>
+      </li>
+    </ul>
+    <app-signup-form (toggle)="emitEvent()"></app-signup-form>
+  </div>
+</section>

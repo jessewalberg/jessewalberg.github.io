@@ -1,0 +1,12 @@
+<section class="success-wrapper">
+  <img class="success-check" src="assets/images/icon-success.svg" />
+  <h3>Thanks for subscribing!</h3>
+  <p>
+    A confirmation email has been sent to
+    <span id="user-email"></span> Please open it and click the button inside to
+    confirm your subscription.
+  </p>
+  <button (click)="emitEvent($event)" class="dismiss-button">
+    Dismiss message
+  </button>
+</section>
